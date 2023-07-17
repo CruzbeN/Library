@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="SmartLibrary.ViewModel.CategoryView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmartLibrary.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="500"
+             Background="Transparent">
+    
+    <Grid>
+        <DataGrid HorizontalGridLinesBrush="Black" VerticalGridLinesBrush="Transparent" HorizontalContentAlignment="Left" VerticalContentAlignment="Bottom" RowBackground="Transparent" RowHeight="25" RowHeaderWidth="0" Foreground="Black" VerticalAlignment="Top" HorizontalAlignment="Center" MinHeight="30" Background="Beige" MaxHeight="330" FontFamily="Arial"  Name="CategoryList"  Width="400" Height="300" Margin="0,25,0,0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="55" Header="Id" Binding="{Binding CategoryId}" />
+                <DataGridTextColumn Width="*" Header="Nazwa" Binding="{Binding Name}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
